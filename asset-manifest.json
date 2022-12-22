@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/3DMachines/static/css/main.b27336a9.css",
+    "main.js": "/3DMachines/static/js/main.1e103588.js",
+    "static/media/bg.gif": "/3DMachines/static/media/bg.e30b6c1c2123769e96b9.gif",
+    "index.html": "/3DMachines/index.html",
+    "main.b27336a9.css.map": "/3DMachines/static/css/main.b27336a9.css.map",
+    "main.1e103588.js.map": "/3DMachines/static/js/main.1e103588.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b27336a9.css",
+    "static/js/main.1e103588.js"
+  ]
+}

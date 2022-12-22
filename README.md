@@ -17,6 +17,8 @@ npm start
 ## Development: 
 For the development of the 3D objects, I used react-three-fiber  which is a react renderer for three.js without limitations. Along with dat.GUI to change the variables such as position or scale of the 3D objects.
 
+Study:
+    get the seconds time since se clock started = getElapsedTime()
 
 
 

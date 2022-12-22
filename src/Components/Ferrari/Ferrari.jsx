@@ -115,7 +115,8 @@ const Ferrari = () => {
     // })
 
     const carro = useRef()
-
+//Hooks allow you to tie or request specific information to your component
+//This hook allows you to execute code on every rendered frame, like running effects, updating controls, and so on.
     useFrame((state,delta) => {
         carro.current.rotation.y += 0.01 
     })
@@ -124,7 +125,9 @@ const Ferrari = () => {
 
   return (<primitive 
     ref={carro}
-    object={gltf.scene} />
+    object={gltf.scene}
+    castShadow
+    />
   )
 }
 

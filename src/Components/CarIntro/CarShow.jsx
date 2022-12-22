@@ -1,11 +1,12 @@
 import { CubeCamera, Environment, Loader, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
+import Aros from './Aros'
 
 
 import Car from './Car'
 import Floor from './Floor'
-import Sign from './Sign'
+// import Sign from './Sign'
 
 
 const CarShow = () => {
@@ -14,6 +15,7 @@ const CarShow = () => {
     <>
     <Canvas shadows>
        <Suspense fallback={null}>
+        
         <OrbitControls
         target={[0,0.35,0]}
         maxPolarAngle={1.45}
@@ -48,12 +50,14 @@ const CarShow = () => {
         castShadow
         shadow-bias={-0.0001}
         />
-        <Sign 
+        {/* <Sign 
         position={[-10,-5,-8]}
           scale={[0.91,1.05,0.2]}
           rotation-y={7.02}
-        />
-        {/* <Aros /> */}
+        /> */}
+
+        <Aros />
+        {/* create more realistic reflections */}
         <CubeCamera resolution={256} frames={Infinity}>
             {(texture) => (
             <>
